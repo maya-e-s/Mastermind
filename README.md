@@ -4,7 +4,7 @@
  
  ## Files
  This project includes four MATLAB files: mastermind.m, nextGuess.m, elimination.m, and compareCodes.m\
- To play the game, run the mastermind.m file
+ To play the game, run the **mastermind.m** file
  
  ## Game Rules
  The game Mastermind challenges player one, the codebreaker, to use logic and deduction skills to break player two’s, the codemaker’s, code./
