@@ -2,8 +2,8 @@
 
  Using Donald Knuth's algorithm to solve the game of mastermind in 5 guesses or less.
  
- # Files
- This project includes four MATLAB files: mastermind.m, nextGuess.m, elimination.m, and compareCodes.m
+ ## Files
+ This project includes four MATLAB files: mastermind.m, nextGuess.m, elimination.m, and compareCodes.m\
  To play the game, run the mastermind.m file
  
  # Game Rules
