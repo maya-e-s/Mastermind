@@ -4,6 +4,8 @@ clear all
 clc
 
 %% create set 'A' and 'B'
+% set A contains all unused combinations. Every time a code is used as a guess, that code is eliminated from A
+% set B contains all possible codes that may match the secret code created by the codemaker 
 A = zeros(1296, 4); % all unused guesses
 i=1;
     for j=1:6
@@ -23,7 +25,8 @@ fprintf('Think of a 4 digit code containing the numbers 1-6, allowing repeats.\n
 tries = 1;
 pegs = [0 0];
 
-while (pegs(1) ~= 4) % until guess is correct, continue guessing
+% until guess is correct, continue guessing
+while (pegs(1) ~= 4) 
     [guess, A, B] = nextGuess(A, B);
     fprintf('Computer guessed: %1.0f %1.0f %1.0f %1.0f\n', guess);
     pegs = input('Return pegs [red, white]: ');
