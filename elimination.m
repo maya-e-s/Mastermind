@@ -1,11 +1,14 @@
 function [A, B] = elimination(pegs, guess, A, B)
-% function elimination: takes the returned pegs and eliminates impossible combinations 
+% function elimination: Takes the returned pegs and eliminates impossible combinations. 
+%                       To eliminate impossible solutions from B, the guess is compared to every element in B. 
+%                       For every element, if comparing the two codes does not result in the same combination of red and white pegs as the codemaker returned, that code is removed from B. 
 % inputs: pegs - the [red, white] pegs returned by player
 %         guess - the computers current guess
 %         A - matrix holding unused guesses
 %         B - matrix holding possible codes left
 % outputs:A - matrix holding unused guesses
 %         B - matrix holding possible codes left
+
 
     % remove guess from A
     [rA cA] = size(A);
