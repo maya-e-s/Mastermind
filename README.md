@@ -4,8 +4,11 @@
  
  ## Files
  This project includes four MATLAB files: mastermind.m, nextGuess.m, elimination.m, and compareCodes.m<br>
- To play the game, run the **mastermind.m** file
+ To play the game, run the **mastermind.m** file 
  
+ ## Standalone Application
+Recently added a standalone app for users that do not have MATLAB installed. Standalone applications run on Windows®, Linux®, and macOS. To run the standalone application, install MATLAB Runtime on the target machine. For more information, read the readme file inside the Standalone App folder or go to https://www.mathworks.com/help/compiler/install-the-matlab-runtime.html.
+
  ## Game Rules
  The game Mastermind challenges player one, the codebreaker, to use logic and deduction skills to break player two’s, the codemaker’s, code.<br>
  The computer will be playing the role of teh codebreaker, and the user will be playing the role of the codemaker.<br>
@@ -14,5 +17,4 @@
  For example, if the codemaker’s code was 1234, and the codebreaker guessed 1525, the codemaker would return one red peg and one white peg.
 
 ## Algorithm
-In 1977, Professor Donald Knuth of Standford University created an algorithm that continuously reduced the number of possible patterns to solve Mastermind in five moves or
-fewer, always starting with a guess in the form of AABB and using the minimax technique to find his next guess. This project implements Knuth's algorithms to break the codemaker's code in 5 guess or less. 
+In 1977, Professor Donald Knuth of Standford University created an algorithm that continuously reduced the number of possible patterns to solve Mastermind in five moves or fewer, always starting with a guess in the form of AABB and using the minimax technique to find his next guess. This project implements Knuth's algorithms to break the codemaker's code in 5 guess or less. 
